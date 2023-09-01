@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>PH TUBE</title>
 </head>
-<body>
+
+<body class="container mx-auto">
+
+    <div class="navbar bg-base-100 mt-10">
+        <div class="navbar-start">
+            <img src="image/Logo.png" alt="Logo">
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <button class="btn btn-active btn-ghost">Sort by view</button>
+        </div>
+        <div class="navbar-end">
+            <a class="btn font-bold bg-red-600 text-base-100">Blog</a>
+        </div>
+    </div>
+    <div class="tab-container w-full mt-5" id="tabContainer">
+        <div class="tabs text-center flex justify-center">
+            <!-- <a class="tab text-center">Tab 1</a>
+            <a class="tab tab-active">Tab 2</a> -->
+            
+        </div>
+    </div>
 
 
-
-    
     <script src="js/index.js"></script>
 </body>
+
 </html>
