@@ -11,6 +11,7 @@ const cardControl = async() => {
         `
         tabContainer.appendChild(div);
     });
+    console.log(arrayData);
 }
 
 
@@ -20,6 +21,7 @@ const onClickEvent = async (elementID) => {
     const data = await response.json();
 
     const cardContainer = document.getElementById("cardContainer");
+    cardContainer.innerHTML = "";
 
     data.data.forEach( (card) => {
         console.log(card);
@@ -33,21 +35,23 @@ const onClickEvent = async (elementID) => {
                 <img class="w-20 h-24 rounded-full" src= ${card.authors[0].profile_picture} alt="">
             </div>
             <div>
-                <h2 class="card-title mb-2">${card.title} <span>${card.authors[0]?.verified}</span></h2>
-                <p class = "">${card.authors[0].profile_name}</p>
-                <p class = "">${card.authors[0].views}</p>
+            <h2 class="card-title mb-2">${card.title} </h2>
+                <p class = "flex gap-2">${card.authors[0].profile_name} <span>${card.authors[0].verified ? '<img src="image/fi_10629607.png" alt="Verified">' : ''}</span></p>
+                <p class = "">${card.others?.views}</p>
             </div>
           </div>
             </div>
         </div>
         `
         cardContainer.appendChild(div);
+        console.log(card);
     })
 
-    console.log(data.data);
+    
 
 }
 
 
 
 cardControl();  
+onClickEvent("1000");
