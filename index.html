@@ -12,15 +12,15 @@
 
 <body class="container mx-auto">
 
-    <div class="navbar bg-base-100 mt-10">
+    <div class="navbar bg-base-100 mt-10 mx-auto">
         <div class="navbar-start">
             <img src="image/Logo.png" alt="Logo">
         </div>
-        <div class="navbar-center hidden lg:flex">
-            <button id="btnSort" class="btn btn-active btn-ghost">Sort by view</button>
+        <div class="navbar-center lg:flex">
+            <button onclick="sortData()"id="btnSort" class="btn btn-active btn-ghost">Sort by view</button>
         </div>
         <div class="navbar-end">
-            <a class="btn font-bold bg-red-600 text-base-100">Blog</a>
+            <button id="blogbtn" class="btn font-bold bg-red-600 text-base-100">Blog</button>
         </div>
     </div>
     <div class="tab-container w-full mt-5 flex justify-center mb-10" id="tabContainer">
@@ -31,7 +31,7 @@
         </div>
     </div>
 
-    <div id="cardContainer" class="grid grid-cols-4 gap-10">
+    <div id="cardContainer" class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-20 mx-auto">
 
         <!-- <div class="card w-96 bg-base-100 shadow-xl">
             <figure><img src="image/Logo.png" alt="Shoes" /></figure>
@@ -53,6 +53,22 @@
       </div> -->
 
       <!-- <img src="" alt=""> -->
+
+      <div  id="hero" >
+
+        <!-- <div class="hero min-h-screen bg-base-200">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <img class="mx-auto" src="image/Icon.png" alt="">
+                <h1 class="text-5xl font-bold">OOPS SORRY!! <br> There is no Content Here</h1>
+              </div>
+            </div>
+          </div> -->
+
+
+      </div>
+
+      
       
 
 
