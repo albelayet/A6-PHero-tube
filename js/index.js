@@ -26,6 +26,7 @@ const onClickEvent = async (elementID) => {
     const cardContainer = document.getElementById("cardContainer");
     const heroContainer = document.getElementById("hero");
     cardContainer.innerHTML = "";
+    heroContainer.innerHTML = "";
     console.log(data.data)
     if (data.data.length > 0) {
         data.data.forEach((card) => {
